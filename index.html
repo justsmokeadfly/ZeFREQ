@@ -8,11 +8,28 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="ZeFREQ — Human Frequency">
   <meta property="og:description" content="Two voices. One frequency. Discover ZeFREQ, a world of connection, contrast and sound.">
-  <meta property="og:image" content="assets/duo.svg">
+  <link rel="canonical" href="https://justsmokeadfly.github.io/ZeFREQ/">
+  <link rel="alternate" hreflang="en" href="https://justsmokeadfly.github.io/ZeFREQ/">
+  <link rel="alternate" hreflang="ru" href="https://justsmokeadfly.github.io/ZeFREQ/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://justsmokeadfly.github.io/ZeFREQ/">
+  <meta property="og:url" content="https://justsmokeadfly.github.io/ZeFREQ/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:image" content="https://justsmokeadfly.github.io/ZeFREQ/assets/og-card.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ZeFREQ — Two voices. One frequency.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://justsmokeadfly.github.io/ZeFREQ/assets/og-card.png">
   <meta name="color-scheme" content="dark">
   <title>ZeFREQ — Human Frequency</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"ZeFREQ","url":"https://justsmokeadfly.github.io/ZeFREQ/","description":"Independent electronic duo. Two voices. One frequency.","foundingDate":"2026","image":"https://justsmokeadfly.github.io/ZeFREQ/assets/og-card.png"}</script>
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -31,7 +48,7 @@
           <a href="#about" data-i18n="navAbout">About</a>
         </nav>
         <div class="header-actions">
-          <div class="lang-switch" role="group" aria-label="Site language"><button class="lang-option" type="button" data-lang="en" aria-label="English" aria-pressed="true">EN</button><span class="lang-separator" aria-hidden="true">/</span><button class="lang-option" type="button" data-lang="ru" aria-label="Русский" aria-pressed="false">RU</button></div>
+          <div class="lang-switch" role="group" aria-label="Site language"><a class="lang-option" href="./" lang="en" hreflang="en" aria-label="English" aria-current="page" data-lang="en">EN</a><span class="lang-separator" aria-hidden="true">/</span><a class="lang-option" href="ru/" lang="ru" hreflang="ru" aria-label="Русский" data-lang="ru">RU</a></div>
           <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
             <span></span><span></span><span></span>
           </button>
@@ -55,8 +72,8 @@
           </div>
           <div class="hero-foot"><span>INDEPENDENT ELECTRONIC DUO</span><span class="hero-foot-right">SIGNAL 001 <span aria-hidden="true">✳</span> DUAL VOCALS</span></div>
         </div>
-        <div class="hero-image" role="img" aria-label="ZeFREQ vocalists in a contemporary electronic music setting">
-          <img src="assets/duo.svg" width="1200" height="1500" alt="Концептуальное изображение электронного дуэта ZeFREQ" fetchpriority="high">
+        <div class="hero-image">
+          <img src="assets/duo.svg" width="1200" height="1500" alt="Concept artwork of the two ZeFREQ vocalists" fetchpriority="high" decoding="async">
           <div class="image-caption"><span>01 / ZE<span class="accent">FREQ</span></span><span>HUMAN FREQUENCY</span></div>
         </div>
         <span class="hero-outline" aria-hidden="true">01 / SIGNAL FOUND</span>
@@ -100,18 +117,18 @@
           <div class="section-label"><span class="index">02</span><span data-i18n="duoLabel">TWO VOICES</span></div>
           <div class="artists-heading"><h2 id="artists-title" data-i18n="duoTitle">Machine rhythm.<br><span class='muted'>Human voice.</span></h2><p data-i18n="duoIntro">Two contrasting timbres working as one. One brings tension; the other brings warmth.</p></div>
           <div class="artist-grid">
-            <article class="artist-card"><img src="assets/male.svg" width="720" height="960" alt="Концепт мужского вокалиста ZeFREQ" loading="lazy"><div class="artist-overlay"><span class="artist-number">VOICE / 01</span><h3 data-i18n="maleRole">Power and rhythm</h3><p data-i18n="maleDesc">Raspy baritone · Clean singing · Aggressive accents</p></div></article>
-            <article class="artist-card"><img src="assets/female.svg" width="720" height="960" alt="Концепт женской вокалистки ZeFREQ" loading="lazy"><div class="artist-overlay"><span class="artist-number">VOICE / 02</span><h3 data-i18n="femaleRole">Soul and melody</h3><p data-i18n="femaleDesc">Warm mezzo-soprano · Soul phrasing · Emotional choruses</p></div></article>
+            <article class="artist-card"><img src="assets/male.svg" width="720" height="960" alt="Concept artwork of the male ZeFREQ vocalist" loading="lazy" decoding="async"><div class="artist-overlay"><span class="artist-number">VOICE / 01</span><h3 data-i18n="maleRole">Power and rhythm</h3><p data-i18n="maleDesc">Raspy baritone · Clean singing · Aggressive accents</p></div></article>
+            <article class="artist-card"><img src="assets/female.svg" width="720" height="960" alt="Concept artwork of the female ZeFREQ vocalist" loading="lazy" decoding="async"><div class="artist-overlay"><span class="artist-number">VOICE / 02</span><h3 data-i18n="femaleRole">Soul and melody</h3><p data-i18n="femaleDesc">Warm mezzo-soprano · Soul phrasing · Emotional choruses</p></div></article>
           </div>
         </div>
       </section>
 
       <section class="release-section" id="release" aria-labelledby="release-title"><div class="wrap release-grid">
-        <div class="release-art" aria-label="Концептуальная графика дебютного сингла, не официальная обложка"><div class="release-noise"></div><div class="release-frequency" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="release-art-logo">Ze<span>FREQ</span></span><span class="release-art-name">ТЕПЛО<br>В ПРОВОДАХ</span><span class="release-art-footer">DEBUT SINGLE / IN PRODUCTION</span></div>
-        <div class="release-info"><div class="section-label"><span class="index">03</span><span data-i18n="releaseLabel">THE FIRST SIGNAL</span></div><div class="small-status"><span class="pulse-dot"></span><span data-i18n="inProduction">IN PRODUCTION</span></div><h2 id="release-title" data-i18n="releaseTitle">Warmth<br>in the Wires</h2><p data-i18n="releaseText">The first transmission is taking shape: two voices trying to reach each other through a city of noise and light. The release date and streaming links will appear here when the song is officially published.</p><div class="release-meta"><div><span data-i18n="releaseFormat">FORMAT</span><strong>SINGLE</strong></div><div><span data-i18n="releaseTempo">TEMPO</span><strong>DUET</strong></div><div><span data-i18n="releaseStatus">STATUS</span><strong data-i18n="soon">SOON</strong></div></div><div class="platforms" aria-label="Планируемые стриминговые площадки"><span data-i18n="planned">PLANNED PLATFORMS</span><div><span>SPOTIFY</span><span>APPLE MUSIC</span><span>ЯНДЕКС МУЗЫКА</span><span>YOUTUBE MUSIC</span></div></div></div>
+        <div class="release-art" role="img" aria-label="Concept artwork for the debut single, not the official cover"><div class="release-noise"></div><div class="release-frequency" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="release-art-logo">Ze<span>FREQ</span></span><span class="release-art-name">WARMTH<br>IN THE WIRES</span><span class="release-art-footer">DEBUT SINGLE / IN PRODUCTION</span></div>
+        <div class="release-info"><div class="section-label"><span class="index">03</span><span data-i18n="releaseLabel">THE FIRST SIGNAL</span></div><div class="small-status"><span class="pulse-dot"></span><span data-i18n="inProduction">IN PRODUCTION</span></div><h2 id="release-title" data-i18n="releaseTitle">Warmth<br>in the Wires</h2><p data-i18n="releaseText">The first transmission is taking shape: two voices trying to reach each other through a city of noise and light. The release date and streaming links will appear here when the song is officially published.</p><div class="release-meta"><div><span data-i18n="releaseFormat">FORMAT</span><strong>SINGLE</strong></div><div><span data-i18n="releaseTempo">VOICES</span><strong>DUET</strong></div><div><span data-i18n="releaseStatus">STATUS</span><strong data-i18n="soon">SOON</strong></div></div><div class="platforms" aria-label="Planned streaming platforms"><span data-i18n="planned">PLANNED PLATFORMS</span><div><span>SPOTIFY</span><span>APPLE MUSIC</span><span>YANDEX MUSIC</span><span>YOUTUBE MUSIC</span></div></div></div>
       </div></section>
 
-      <section class="about-section wrap" id="about"><div class="about-grid"><div class="about-photo"><img src="assets/duo.svg" width="1200" height="1500" alt="Концептуальный арт дуэта ZeFREQ в техно-эстетике" loading="lazy"><div class="photo-sticker">TWO VOICES.<br>ONE FREQUENCY.</div></div><div class="about-content"><div class="section-label"><span class="index">04</span><span data-i18n="aboutLabel">OUR STORY</span></div><h2 data-i18n="aboutTitle">Two voices.<br><span class='muted'>One story.</span></h2><p data-i18n="aboutP1">ZeFREQ is an independent electronic duo built around two contrasting voices and a shared imaginary world. Each song is a new piece of their conversation.</p><p data-i18n="aboutP2">We tell stories about distance, connection, memory and the feeling that someone is still listening on the other end. Beyond the noise, something human always remains.</p><blockquote>"TWO VOICES. ONE FREQUENCY."</blockquote><div class="about-meta">EST. 2026 <span>•</span> INDEPENDENT ELECTRONIC MUSIC</div></div></div></section>
+      <section class="about-section wrap" id="about"><div class="about-grid"><div class="about-photo"><img src="assets/duo.svg" width="1200" height="1500" alt="Concept artwork of the ZeFREQ electronic duo" loading="lazy" decoding="async"><div class="photo-sticker">TWO VOICES.<br>ONE FREQUENCY.</div></div><div class="about-content"><div class="section-label"><span class="index">04</span><span data-i18n="aboutLabel">OUR STORY</span></div><h2 data-i18n="aboutTitle">Two voices.<br><span class='muted'>One story.</span></h2><p data-i18n="aboutP1">ZeFREQ is an independent electronic duo built around two contrasting voices and a shared imaginary world. Each song is a new piece of their conversation.</p><p data-i18n="aboutP2">We tell stories about distance, connection, memory and the feeling that someone is still listening on the other end. Beyond the noise, something human always remains.</p><blockquote>"TWO VOICES. ONE FREQUENCY."</blockquote><div class="about-meta">EST. 2026 <span>•</span> INDEPENDENT ELECTRONIC MUSIC</div></div></div></section>
 
       <section class="end-section"><div class="wrap end-inner"><div class="end-eyebrow"><span class="pulse-dot"></span><span data-i18n="endEyebrow">THE SIGNAL IS NEAR</span></div><h2>STAY ON<br><em>FREQUENCY.</em></h2><p data-i18n="endText">ZeFREQ is just beginning. New music and official artist profiles will appear here after launch.</p><a class="button button-primary" href="#top"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div></section>
     </main>
