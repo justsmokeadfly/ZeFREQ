@@ -1,30 +1,26 @@
-# ZeFREQ — Human Frequency
+# ZeFREQ — official concept website
 
-Official concept website for the electronic duo **ZeFREQ**, fusing Soul, Industrial and Drum & Bass.
+Bilingual official website of **ZeFREQ**, an independent electronic duo built around two contrasting voices and one shared story.
 
-- Bilingual Russian/English, responsive to desktop and mobile.
-- Static HTML, CSS and JavaScript. No external build system or backend.
-- Debut track **«Тепло в проводах»** marked as in production.
-- Platforms are planned destinations, not active streaming links.
+- English homepage: https://justsmokeadfly.github.io/ZeFREQ/ (default for new visitors).
+- Russian homepage: https://justsmokeadfly.github.io/ZeFREQ/ru/ (indexable, works without JavaScript).
+- Locale links in the header remember the visitor's preference.
+- HTML/CSS/vanilla JavaScript only; no dependencies or backend.
+- The debut single **«Тепло в проводах» / “Warmth in the Wires”** is **in production**. The streaming platforms are planned, not linked to unpublished music.
 
-## Enable GitHub Pages
+## Development
 
-1. Open [Settings → Pages](https://github.com/justsmokeadfly/ZeFREQ/settings/pages).
-2. Under **Build and deployment**, select **Source: GitHub Actions**.
-3. Open [the deployment workflow](https://github.com/justsmokeadfly/ZeFREQ/actions/workflows/deploy.yml), press **Run workflow** → **main** → **Run workflow**.
+Run `node --test tests/*.test.mjs` with Node.js 22+ before updating the site. Tests check site structure, two static languages, relative paths, metadata, and responsive grid rules. The GitHub Pages workflow runs these checks and publishes **only** the public files in `dist/`.
 
-After a successful deployment the live URL will be: **https://justsmokeadfly.github.io/ZeFREQ/**
+GitHub Pages settings: **Settings → Pages → Build and deployment → GitHub Actions**.
 
-The workflow lives at `.github/workflows/deploy.yml` and deploys automatically on future commits to main.
+## Updating content
 
-## Artwork status
+- Edit both `index.html` (English) and `ru/index.html` (Russian). Keep their anchors, canonical and alternate-language URLs in sync.
+- `app.js` manages the mobile menu and remembers the language selection. Language switching uses ordinary links and works without JavaScript.
+- `assets/og-card.png` is the social-sharing preview (1200×630).
+- Artist portraits in `assets/duo.svg`, `assets/male.svg`, `assets/female.svg` remain **temporary original concept illustrations**, not final approved artist photographs. Replace these only with authorized final artwork.
+- Do not add real platform or social URLs until they have been verified. Do not present the concept single art as the final release cover.
+- `robots.txt` and `sitemap.xml` list both page languages.
 
-This first GitHub release contains temporary original SVG character illustrations. The previous full-resolution generated duo photos are included in the archive delivered in the ChatGPT conversation; the current GitHub connector cannot transfer binary media directly. Replace the SVG artwork with the approved photographs later.
-
-## When the debut is released
-
-Update the release details and replace planned platform names with verified links to Spotify, Yandex Music, Apple Music, and YouTube Music.
-
-Theme: Graphite #101820, Electric Blue #65D7FA, Soul Amber #F5B369.
-
-© 2026 ZeFREQ.
+Theme: graphite, cyan and amber. © 2026 ZeFREQ.

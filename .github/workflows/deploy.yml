@@ -11,7 +11,19 @@ concurrency:
   group: github-pages
   cancel-in-progress: true
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate pages and assets
+        run: node --test tests/*.test.mjs
   deploy:
+    needs: test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -21,10 +33,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Build minimal static artifact
+        run: |
+          mkdir -p dist/assets dist/ru
+          cp index.html app.js styles.css .nojekyll robots.txt sitemap.xml dist/
+          cp ru/index.html dist/ru/
+          cp assets/* dist/assets/
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: dist
       - name: Deploy site
         id: deployment
         uses: actions/deploy-pages@v4

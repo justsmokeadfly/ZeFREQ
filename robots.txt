@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://justsmokeadfly.github.io/ZeFREQ/sitemap.xml
