@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080f16">
-  <meta name="description" content="ZeFREQ — электронный дуэт. Два голоса. Одна частота. Soul, industrial и drum & bass.">
+  <meta name="description" content="ZeFREQ — an electronic duo. Two voices. One frequency. Soul, industrial and drum & bass.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ZeFREQ — Human Frequency">
   <meta property="og:description" content="Two voices. One frequency. Soul × Industrial × Drum & Bass.">
@@ -16,23 +16,23 @@
   <script defer src="app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#content" data-i18n="skip">К основному содержимому</a>
+  <a class="skip-link" href="#content" data-i18n="skip">Skip to content</a>
   <div class="site-shell">
     <header class="site-header" id="top">
       <div class="header-inner wrap">
-        <a class="brand" href="#top" aria-label="ZeFREQ — наверх">
+        <a class="brand" href="#top" aria-label="ZeFREQ — back to top">
           <svg class="brand-icon" viewBox="0 0 44 44" aria-hidden="true"><path d="M4 23h7l4-12 7 23 6-16 4 5h8" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="square"/></svg>
           <span>Ze<span class="accent">FREQ</span></span>
         </a>
-        <nav class="nav" id="primary-nav" aria-label="Главная навигация">
-          <a href="#sound" data-i18n="navSound">Звук</a>
-          <a href="#artists" data-i18n="navDuo">Дуэт</a>
-          <a href="#release" data-i18n="navRelease">Релиз</a>
-          <a href="#about" data-i18n="navAbout">О группе</a>
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#sound" data-i18n="navSound">Sound</a>
+          <a href="#artists" data-i18n="navDuo">The duo</a>
+          <a href="#release" data-i18n="navRelease">Release</a>
+          <a href="#about" data-i18n="navAbout">About</a>
         </nav>
         <div class="header-actions">
-          <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch to English">EN <span aria-hidden="true">↗</span></button>
-          <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Открыть меню">
+          <div class="lang-switch" role="group" aria-label="Site language"><button class="lang-option" type="button" data-lang="en" aria-label="English" aria-pressed="true">EN</button><span class="lang-separator" aria-hidden="true">/</span><button class="lang-option" type="button" data-lang="ru" aria-label="Русский" aria-pressed="false">RU</button></div>
+          <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -43,19 +43,19 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-light" aria-hidden="true"></div>
         <div class="hero-copy wrap">
-          <div class="eyebrow"><span class="pulse-dot"></span> <span data-i18n="heroEyebrow">НЕЗАВИСИМЫЙ ЭЛЕКТРОННЫЙ ПРОЕКТ / 2026</span></div>
+          <div class="eyebrow"><span class="pulse-dot"></span> <span data-i18n="heroEyebrow">INDEPENDENT ELECTRONIC PROJECT / 2026</span></div>
           <div class="hero-title-box">
-            <p class="overline" data-i18n="heroTiny">ДВА ГОЛОСА. ОДНА ЧАСТОТА.</p>
+            <p class="overline" data-i18n="heroTiny">TWO VOICES. ONE FREQUENCY.</p>
             <h1 id="hero-title">HUMAN<br><em>FREQUENCY<span class="title-period">.</span></em></h1>
-            <p class="hero-lead" data-i18n="heroLead">Тепло человеческих голосов. Холод механических ритмов. Электронная музыка на грани чувств и технологий.</p>
+            <p class="hero-lead" data-i18n="heroLead">The warmth of human voices. The cold of mechanical rhythms. Electronic music between emotion and technology.</p>
             <div class="hero-ctas">
-              <a class="button button-primary" href="#release"><span data-i18n="discover">Первый релиз</span><span aria-hidden="true">↗</span></a>
-              <a class="button button-text" href="#sound"><span data-i18n="explore">Узнать звучание</span><span aria-hidden="true">↓</span></a>
+              <a class="button button-primary" href="#release"><span data-i18n="discover">Debut single</span><span aria-hidden="true">↗</span></a>
+              <a class="button button-text" href="#sound"><span data-i18n="explore">Explore the sound</span><span aria-hidden="true">↓</span></a>
             </div>
           </div>
           <div class="hero-foot"><span>SOUL / INDUSTRIAL / DRUM & BASS</span><span class="hero-foot-right">174 BPM <span aria-hidden="true">✳</span> DUAL VOCALS</span></div>
         </div>
-        <div class="hero-image" role="img" aria-label="Вокалисты ZeFREQ в современной электронной студийной эстетике">
+        <div class="hero-image" role="img" aria-label="ZeFREQ vocalists in a contemporary electronic music setting">
           <img src="assets/duo.svg" width="1200" height="1500" alt="Концептуальное изображение электронного дуэта ZeFREQ" fetchpriority="high">
           <div class="image-caption"><span>01 / ZE<span class="accent">FREQ</span></span><span>HUMAN FREQUENCY</span></div>
         </div>
@@ -69,36 +69,36 @@
 
       <section class="section wrap sound-section" id="sound" aria-labelledby="sound-title">
         <div class="section-head">
-          <div><div class="section-label"><span class="index">01</span><span data-i18n="soundLabel">НАШ ЗВУК</span></div><h2 id="sound-title" data-i18n="soundTitle">Три мира.<br><span class="muted">Одна энергия.</span></h2></div>
-          <p class="section-intro" data-i18n="soundIntro">Музыка ZeFREQ живёт на контрасте: тёплая соул-мелодика встречается с индустриальными гитарами и быстрыми электронными брейками.</p>
+          <div><div class="section-label"><span class="index">01</span><span data-i18n="soundLabel">OUR SOUND</span></div><h2 id="sound-title" data-i18n="soundTitle">Three worlds.<br><span class='muted'>One energy.</span></h2></div>
+          <p class="section-intro" data-i18n="soundIntro">ZeFREQ lives in contrast: warm soul melodies meet industrial guitars and fast electronic breaks.</p>
         </div>
         <div class="sound-grid">
-          <article class="sound-card soul"><div class="sound-card-top"><span>01 / FEEL</span><span class="sound-glyph">◌</span></div><h3>SOUL <span>35%</span></h3><p data-i18n="soulDesc">Живые эмоции, бархатный вокал, тёплый Rhodes и глубокая мелодия.</p><div class="card-bar"><span style="width:35%"></span></div></article>
-          <article class="sound-card industrial"><div class="sound-card-top"><span>02 / IMPACT</span><span class="sound-glyph">⌁</span></div><h3>INDUSTRIAL <span>30%</span></h3><p data-i18n="industrialDesc">Механические гитарные риффы, металл и контролируемая агрессия.</p><div class="card-bar"><span style="width:30%"></span></div></article>
-          <article class="sound-card bass"><div class="sound-card-top"><span>03 / MOVE</span><span class="sound-glyph">≋</span></div><h3>DRUM & BASS <span>35%</span></h3><p data-i18n="bassDesc">174 BPM, скоростные брейкбиты, массивный саб-бас и нейрофанк.</p><div class="card-bar"><span style="width:35%"></span></div></article>
+          <article class="sound-card soul"><div class="sound-card-top"><span>01 / FEEL</span><span class="sound-glyph">◌</span></div><h3>SOUL <span>35%</span></h3><p data-i18n="soulDesc">Real emotion, velvet vocals, warm Rhodes piano and deep melody.</p><div class="card-bar"><span style="width:35%"></span></div></article>
+          <article class="sound-card industrial"><div class="sound-card-top"><span>02 / IMPACT</span><span class="sound-glyph">⌁</span></div><h3>INDUSTRIAL <span>30%</span></h3><p data-i18n="industrialDesc">Mechanical guitar riffs, metal and controlled aggression.</p><div class="card-bar"><span style="width:30%"></span></div></article>
+          <article class="sound-card bass"><div class="sound-card-top"><span>03 / MOVE</span><span class="sound-glyph">≋</span></div><h3>DRUM & BASS <span>35%</span></h3><p data-i18n="bassDesc">174 BPM, rapid breakbeats, huge sub-bass and neurofunk.</p><div class="card-bar"><span style="width:35%"></span></div></article>
         </div>
         <div class="wave-divider" aria-hidden="true"><span class="wave-line"></span><span class="wave-tick">SIGNAL ∿ 174.0 HZ</span></div>
       </section>
 
       <section class="artists-section" id="artists" aria-labelledby="artists-title">
         <div class="wrap">
-          <div class="section-label"><span class="index">02</span><span data-i18n="duoLabel">ДВА ГОЛОСА</span></div>
-          <div class="artists-heading"><h2 id="artists-title" data-i18n="duoTitle">Машинный ритм.<br><span class="muted">Человеческий голос.</span></h2><p data-i18n="duoIntro">Два контрастных тембра работают как единый инструмент. Один добавляет напряжение, другой — тепло.</p></div>
+          <div class="section-label"><span class="index">02</span><span data-i18n="duoLabel">TWO VOICES</span></div>
+          <div class="artists-heading"><h2 id="artists-title" data-i18n="duoTitle">Machine rhythm.<br><span class='muted'>Human voice.</span></h2><p data-i18n="duoIntro">Two contrasting timbres working as one. One brings tension; the other brings warmth.</p></div>
           <div class="artist-grid">
-            <article class="artist-card"><img src="assets/male.svg" width="720" height="960" alt="Концепт мужского вокалиста ZeFREQ" loading="lazy"><div class="artist-overlay"><span class="artist-number">VOICE / 01</span><h3 data-i18n="maleRole">Сила и ритм</h3><p data-i18n="maleDesc">Хрипловатый баритон · Чистое пение · Агрессивные акценты</p></div></article>
-            <article class="artist-card"><img src="assets/female.svg" width="720" height="960" alt="Концепт женской вокалистки ZeFREQ" loading="lazy"><div class="artist-overlay"><span class="artist-number">VOICE / 02</span><h3 data-i18n="femaleRole">Душа и мелодия</h3><p data-i18n="femaleDesc">Тёплое меццо-сопрано · Соул-фразировка · Эмоциональные припевы</p></div></article>
+            <article class="artist-card"><img src="assets/male.svg" width="720" height="960" alt="Концепт мужского вокалиста ZeFREQ" loading="lazy"><div class="artist-overlay"><span class="artist-number">VOICE / 01</span><h3 data-i18n="maleRole">Power and rhythm</h3><p data-i18n="maleDesc">Raspy baritone · Clean singing · Aggressive accents</p></div></article>
+            <article class="artist-card"><img src="assets/female.svg" width="720" height="960" alt="Концепт женской вокалистки ZeFREQ" loading="lazy"><div class="artist-overlay"><span class="artist-number">VOICE / 02</span><h3 data-i18n="femaleRole">Soul and melody</h3><p data-i18n="femaleDesc">Warm mezzo-soprano · Soul phrasing · Emotional choruses</p></div></article>
           </div>
         </div>
       </section>
 
       <section class="release-section" id="release" aria-labelledby="release-title"><div class="wrap release-grid">
         <div class="release-art" aria-label="Концептуальная графика дебютного сингла, не официальная обложка"><div class="release-noise"></div><div class="release-frequency" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="release-art-logo">Ze<span>FREQ</span></span><span class="release-art-name">ТЕПЛО<br>В ПРОВОДАХ</span><span class="release-art-footer">DEBUT SINGLE / IN PRODUCTION</span></div>
-        <div class="release-info"><div class="section-label"><span class="index">03</span><span data-i18n="releaseLabel">ПЕРВЫЙ СИГНАЛ</span></div><div class="small-status"><span class="pulse-dot"></span><span data-i18n="inProduction">В РАБОТЕ</span></div><h2 id="release-title" data-i18n="releaseTitle">Тепло<br>в проводах</h2><p data-i18n="releaseText">Наш первый сингл — столкновение нежного соул-дуэта, тяжёлых механических гитар и энергичного Drum & Bass. Релиз готовится. Дата выхода и ссылки на стриминги появятся здесь после официальной публикации.</p><div class="release-meta"><div><span data-i18n="releaseFormat">ФОРМАТ</span><strong>SINGLE</strong></div><div><span data-i18n="releaseTempo">ТЕМП</span><strong>174 BPM</strong></div><div><span data-i18n="releaseStatus">СТАТУС</span><strong data-i18n="soon">СКОРО</strong></div></div><div class="platforms" aria-label="Планируемые стриминговые площадки"><span data-i18n="planned">ПЛАНИРУЕМЫЕ ПЛОЩАДКИ</span><div><span>SPOTIFY</span><span>APPLE MUSIC</span><span>ЯНДЕКС МУЗЫКА</span><span>YOUTUBE MUSIC</span></div></div></div>
+        <div class="release-info"><div class="section-label"><span class="index">03</span><span data-i18n="releaseLabel">THE FIRST SIGNAL</span></div><div class="small-status"><span class="pulse-dot"></span><span data-i18n="inProduction">IN PRODUCTION</span></div><h2 id="release-title" data-i18n="releaseTitle">Warmth<br>in the Wires</h2><p data-i18n="releaseText">Our debut single brings together tender soul duet vocals, heavy mechanical guitars and high-energy Drum & Bass. Release in development; date and streaming links will appear once officially published.</p><div class="release-meta"><div><span data-i18n="releaseFormat">FORMAT</span><strong>SINGLE</strong></div><div><span data-i18n="releaseTempo">TEMPO</span><strong>174 BPM</strong></div><div><span data-i18n="releaseStatus">STATUS</span><strong data-i18n="soon">SOON</strong></div></div><div class="platforms" aria-label="Планируемые стриминговые площадки"><span data-i18n="planned">PLANNED PLATFORMS</span><div><span>SPOTIFY</span><span>APPLE MUSIC</span><span>ЯНДЕКС МУЗЫКА</span><span>YOUTUBE MUSIC</span></div></div></div>
       </div></section>
 
-      <section class="about-section wrap" id="about"><div class="about-grid"><div class="about-photo"><img src="assets/duo.svg" width="1200" height="1500" alt="Концептуальный арт дуэта ZeFREQ в техно-эстетике" loading="lazy"><div class="photo-sticker">TWO VOICES.<br>ONE FREQUENCY.</div></div><div class="about-content"><div class="section-label"><span class="index">04</span><span data-i18n="aboutLabel">ФИЛОСОФИЯ</span></div><h2 data-i18n="aboutTitle">Не жанр.<br><span class="muted">Состояние.</span></h2><p data-i18n="aboutP1">ZeFREQ — независимый электронный проект с двумя вокальными характерами. Мы соединяем несовместимое: соуловую уязвимость, индустриальный напор и скорость Drum & Bass.</p><p data-i18n="aboutP2">Технологии задают ритм. Человеческие голоса придают ему смысл. Здесь тишина может быть громче дропа, а мелодия — тяжелее гитары.</p><blockquote>"TWO VOICES. ONE FREQUENCY."</blockquote><div class="about-meta">EST. 2026 <span>•</span> INDEPENDENT ELECTRONIC MUSIC</div></div></div></section>
+      <section class="about-section wrap" id="about"><div class="about-grid"><div class="about-photo"><img src="assets/duo.svg" width="1200" height="1500" alt="Концептуальный арт дуэта ZeFREQ в техно-эстетике" loading="lazy"><div class="photo-sticker">TWO VOICES.<br>ONE FREQUENCY.</div></div><div class="about-content"><div class="section-label"><span class="index">04</span><span data-i18n="aboutLabel">PHILOSOPHY</span></div><h2 data-i18n="aboutTitle">Not a genre.<br><span class='muted'>A feeling.</span></h2><p data-i18n="aboutP1">ZeFREQ is an independent electronic project with two distinct vocal personalities. We fuse unlikely worlds: soulful vulnerability, industrial impact and Drum & Bass speed.</p><p data-i18n="aboutP2">Technology sets the rhythm. Human voices give it meaning. Here, silence can be louder than a drop, and a melody heavier than a guitar.</p><blockquote>"TWO VOICES. ONE FREQUENCY."</blockquote><div class="about-meta">EST. 2026 <span>•</span> INDEPENDENT ELECTRONIC MUSIC</div></div></div></section>
 
-      <section class="end-section"><div class="wrap end-inner"><div class="end-eyebrow"><span class="pulse-dot"></span><span data-i18n="endEyebrow">СИГНАЛ УЖЕ РЯДОМ</span></div><h2>STAY ON<br><em>FREQUENCY.</em></h2><p data-i18n="endText">ZeFREQ только начинает свою историю. Новая музыка и официальные страницы появятся здесь после запуска.</p><a class="button button-primary" href="#top"><span data-i18n="backTop">Наверх</span><span aria-hidden="true">↑</span></a></div></section>
+      <section class="end-section"><div class="wrap end-inner"><div class="end-eyebrow"><span class="pulse-dot"></span><span data-i18n="endEyebrow">THE SIGNAL IS NEAR</span></div><h2>STAY ON<br><em>FREQUENCY.</em></h2><p data-i18n="endText">ZeFREQ is just beginning. New music and official artist profiles will appear here after launch.</p><a class="button button-primary" href="#top"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div></section>
     </main>
     <footer class="site-footer"><div class="wrap footer-inner"><a class="footer-logo" href="#top">Ze<span>FREQ</span></a><span>© <span id="year">2026</span> ZeFREQ. INDEPENDENT MUSIC PROJECT.</span><span>HUMAN FREQUENCY / 174 BPM</span></div></footer>
   </div>
