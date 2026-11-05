@@ -88,7 +88,7 @@
   const nav = document.getElementById('primary-nav');
   const menu = document.querySelector('.menu-toggle');
   let language = 'en';
-  try { language = localStorage.getItem('zefreq-lang') === 'ru' ? 'ru' : 'en'; } catch (_) {}
+  try { language = localStorage.getItem('zefreq-language-v2') === 'ru' ? 'ru' : 'en'; } catch (_) {}
 
   function applyLanguage(next) {
     language = next === 'ru' ? 'ru' : 'en';
@@ -103,7 +103,7 @@
     document.querySelector('.brand').setAttribute('aria-label', language === 'ru' ? 'ZeFREQ — наверх' : 'ZeFREQ — back to top');
     document.querySelector('.hero-image').setAttribute('aria-label', language === 'ru' ? 'Вокалисты ZeFREQ в современной электронной студийной эстетике' : 'ZeFREQ vocalists in a contemporary electronic music setting');
     document.querySelector('meta[name="description"]').setAttribute('content', language === 'ru' ? 'ZeFREQ — электронный дуэт. Два голоса. Одна частота. Soul, industrial и drum & bass.' : 'ZeFREQ — an electronic duo. Two voices. One frequency. Soul, industrial and drum & bass.');
-    try { localStorage.setItem('zefreq-lang', language); } catch (_) {}
+    try { localStorage.setItem('zefreq-language-v2', language); } catch (_) {}
   }
 
   switches.forEach(button => button.addEventListener('click', () => applyLanguage(button.dataset.lang)));
